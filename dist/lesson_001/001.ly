@@ -1,6 +1,6 @@
 \version "2.20.0"
 
-% `$ lilypond -fpng -dcrop 001.ly`
+% `$ lilypond -dbackend=svg -dcrop 001.ly`
 
 \paper{
   indent=0\mm
@@ -27,7 +27,7 @@ signatures = {
     \new Staff = "lower" {
       \signatures
       \clef bass
-      c1,
+      c,1
     }
   >>
 }

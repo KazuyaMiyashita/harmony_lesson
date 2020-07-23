@@ -1,6 +1,6 @@
 \version "2.20.0"
 
-% `$ lilypond -fpng -dcrop lesson_000_1.ly`
+% `$ lilypond -fpng -dcrop 001.ly`
 
 \paper{
   indent=0\mm
@@ -44,12 +44,14 @@ bass = \relative c' {
   <<
     \new Staff = "upper" <<
       \signatures
+      \hide TimeSignature
       \new Voice = "soprano" \soprano
       \new Voice = "alto" \alto
     >>
     \new Staff = "lower" <<
       \signatures
       \clef bass
+      \hide TimeSignature
       \new Voice = "tenor" \tenor
       \new Voice = "bass" \bass
     >>
